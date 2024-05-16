@@ -12,8 +12,6 @@ function App() {
               style={{
                 backgroundImage:
                   "url(./sign_up_2.jpg)"
-                // "url(https://cdn.easyfrontend.com/pictures/sign-in-up/sign3.jpg)",
-                // "url(https://images.pexels.com/photos/6592674/pexels-photo-6592674.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"
               }}
             ></div>
           </div>
