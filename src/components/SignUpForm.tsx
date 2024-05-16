@@ -80,7 +80,7 @@ function SignUpForm() {
 
             try {
                 const tid = toast('Signing you up!')
-                const res = await fetch('https://django-dev.aakscience.com/signup/', { method: 'POST', mode: 'cors', signal: signal, headers: { "Content-Type": "application/json" }, referrerPolicy: "no-referrer", body: JSON.stringify(request) })
+                const res = await fetch(process.env.REACT_APP_API_URL!, { method: 'POST', mode: 'cors', signal: signal, headers: { "Content-Type": "application/json" }, referrerPolicy: "no-referrer", body: JSON.stringify(request) })
                 const data = await res.json()
                 toast.remove(tid)
                 if (res.ok) {
