@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import SignUpForm from './components/SignUpForm';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <section className="ezy__signup6 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
+      <div className="container px-4 mx-auto">
+        <div className="grid grid-cols-12 h-full">
+          <div className="col-span-12 lg:col-span-6">
+            <div
+              className="bg-center bg-no-repeat bg-cover w-full min-h-[150px] rounded-[25px] hidden lg:block h-full"
+              style={{
+                backgroundImage:
+                  // "url(https://cdn.easyfrontend.com/pictures/sign-in-up/sign3.jpg)",
+                  // "url(https://aakscience.com/assets/card1-DOTyqNbL.png)",
+                  "url(https://images.pexels.com/photos/6592674/pexels-photo-6592674.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"
+              }}
+            ></div>
+          </div>
+          <div className="col-span-12 lg:col-span-5 lg:col-start-8 py-12">
+            <div className="flex items-center justify-center h-full">
+              <div className="w-full max-w-2xl mx-auto">
+                <h2 className="text-indigo-900 dark:text-white text-3xl font-bold mb-3">
+                  Welcome to AAK Tele-Science
+                </h2>
+                <div className="flex items-center mb-6 md:mb-12">
+                  <p className="mb-0 mr-2 opacity-50">
+                    Already have an account?
+                  </p>
+                  <a href="#!">Sign In</a>
+                </div>
 
-export default App;
+                <SignUpForm />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default App
