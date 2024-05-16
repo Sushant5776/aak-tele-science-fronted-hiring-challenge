@@ -2,11 +2,6 @@ import { faFacebook, faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Fragment } from "react/jsx-runtime";
 
-// type Props = {
-//     icon: IconDefinition;
-//     text: string;
-// };
-
 function SocialLogin() {
     return (
         <Fragment>

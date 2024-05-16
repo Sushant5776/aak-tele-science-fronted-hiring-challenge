@@ -1,4 +1,5 @@
 import SignUpForm from './components/SignUpForm';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
   return (
@@ -10,9 +11,9 @@ function App() {
               className="bg-center bg-no-repeat bg-cover w-full min-h-[150px] rounded-[25px] hidden lg:block h-full"
               style={{
                 backgroundImage:
-                  // "url(https://cdn.easyfrontend.com/pictures/sign-in-up/sign3.jpg)",
-                  // "url(https://aakscience.com/assets/card1-DOTyqNbL.png)",
-                  "url(https://images.pexels.com/photos/6592674/pexels-photo-6592674.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"
+                  "url(./sign_up_2.jpg)"
+                // "url(https://cdn.easyfrontend.com/pictures/sign-in-up/sign3.jpg)",
+                // "url(https://images.pexels.com/photos/6592674/pexels-photo-6592674.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"
               }}
             ></div>
           </div>
@@ -35,6 +36,7 @@ function App() {
           </div>
         </div>
       </div>
+      <Toaster />
     </section>
   );
 };
